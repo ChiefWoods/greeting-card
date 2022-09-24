@@ -1,0 +1,86 @@
+/* figure out animation later on */
+
+:root {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+.welcome {
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 100px;
+  background: url("images/welcome.jpg");
+  background-size: cover;
+}
+
+.greetings {
+  width: 100vw;
+  height: 100vh;
+  margin: 100px 0;
+}
+
+#slides {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.slide {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+#nav-dots {
+  margin: 0px;
+  text-align: center;
+  position: relative;
+  bottom: 75px;
+}
+
+.nav-dot {
+  display: inline;
+}
+
+.dot {
+  display: inline-block;
+  width: 12.5px;
+  height: 12.5px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+  margin: 0 22.5px;
+}
+
+#slide1 {
+  background: url("images/top down/top down 3.jpg");
+  background-size: cover;
+}
+
+#slide2 {
+  background: url("images/top down/top down 4.jpg");
+  background-size: cover;
+}
+
+#slide3 {
+  background: url("images/top down/top down 10.jpg");
+  background-size: cover;
+}
+
+#slide4 {
+  background: url("images/top down/top down 8.jpg");
+  background-size: cover;
+}
+
+#slide5 {
+  background: url("images/top down/top down 6.jpg");
+  background-size: cover;
+}
