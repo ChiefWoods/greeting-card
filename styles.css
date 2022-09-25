@@ -26,8 +26,8 @@ section {
   width: 100vw;
   height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: start;
 }
 
 .welcome {
@@ -42,6 +42,29 @@ section {
   flex-direction: column;
   text-align: center;
   color: white;
+}
+
+.welcome-text {
+  margin-left: 9%;
+  margin-bottom: 12%;
+}
+
+.welcome-text h3 {
+  font-size: 20px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.welcome-text > h1 {
+  font-size: 49px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.welcome-text > h2 {
+  font-size: 75px;
+  letter-spacing: 9px;
+  margin: 15px 0 0;
 }
 
 .greetings {
@@ -63,32 +86,24 @@ section {
   min-height: 100vh;
   scroll-snap-align: start;
   display: flex;
-}
-
-.arrow {
-  margin: auto 0;
-  width: 100vw;
-  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 .previous-slide,
 .next-slide {
-  display: inline-block;
   border: solid white;
   border-width: 0 5px 5px 0;
   padding: 13px;
 }
 
 .previous-slide {
-  position: relative;
-  left: 30px;
+  margin-left: 37.5px;
   transform: translateY(-50%) rotate(135deg);
 }
 
 .next-slide {
-  position: relative;
-  right: 30px;
+  margin-right: 37.5px;
   transform: translateY(-50%) rotate(-45deg);
 }
 
@@ -99,7 +114,36 @@ section {
 }
 
 .greeting-box {
-  display: none;
+  margin-left: auto;
+  margin-right: 8%;
+  display: flex;
+  color: white;
+}
+
+.chinese {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-align: center;
+  letter-spacing: 20px;
+  font-size: 65px;
+  margin: 0px 5px;
+}
+
+.pinyin {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-align: center;
+  margin: 0px 10px 20px;
+  padding-top: 0px;
+  font-family: 'Optima', sans-serif;
+}
+
+.translation {
+  max-width: 200px;
+  margin-left: 30px;
+  margin-top: 20%;
+  font-size: 35px;
+  font-family: 'New Century Schoolbook', 'TeX Gyre Schola', serif;
 }
 
 #nav-dots {
@@ -107,10 +151,6 @@ section {
   text-align: center;
   position: relative;
   bottom: 75px;
-}
-
-.nav-dot {
-  display: inline;
 }
 
 .dot {
