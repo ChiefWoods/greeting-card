@@ -65,9 +65,9 @@ section {
   display: flex;
 }
 
-.arrows {
+.arrow {
   margin: auto 0;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
 }
@@ -92,6 +92,16 @@ section {
   transform: translateY(-50%) rotate(-45deg);
 }
 
+.previous-slide:hover,
+.next-slide:hover {
+  padding: 17.5px;
+  transition: all 0.5s ease;
+}
+
+.greeting-box {
+  display: none;
+}
+
 #nav-dots {
   margin: 0px;
   text-align: center;
@@ -111,6 +121,11 @@ section {
   border-radius: 50%;
   border: 2px solid whitesmoke;
   margin: 0 22.5px;
+}
+
+.dot:hover {
+  box-shadow: 0px 0px 7px 2px #FFFFFF;
+  transition: all 0.25s ease;
 }
 
 .ending {
