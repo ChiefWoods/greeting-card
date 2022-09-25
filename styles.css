@@ -2,22 +2,46 @@
 
 :root {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 body {
   margin: 0;
+  overflow-y: scroll;
 }
+
+section {
+  scroll-snap-align: start;
+}
+
 
 *::-webkit-scrollbar {
   width: 0;
 }
 
-.welcome {
+
+.welcome,
+.ending {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome {
   margin-bottom: 100px;
   background: url("images/welcome.jpg");
   background-size: cover;
+}
+
+.welcome-text,
+.ending-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
 }
 
 .greetings {
@@ -28,15 +52,44 @@ body {
 
 #slides {
   display: flex;
-  flex-direction: row;
   overflow: hidden;
   overflow-x: scroll;
   scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
 
 .slide {
   min-width: 100vw;
   min-height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+}
+
+.arrows {
+  margin: auto 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.previous-slide,
+.next-slide {
+  display: inline-block;
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  padding: 13px;
+}
+
+.previous-slide {
+  position: relative;
+  left: 30px;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.next-slide {
+  position: relative;
+  right: 30px;
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 #nav-dots {
@@ -58,6 +111,12 @@ body {
   border-radius: 50%;
   border: 2px solid whitesmoke;
   margin: 0 22.5px;
+}
+
+.ending {
+  margin-top: 100px;
+  background: url("images/ending.jpg");
+  background-size: cover;
 }
 
 #slide1 {

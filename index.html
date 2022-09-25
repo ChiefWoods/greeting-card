@@ -3,35 +3,68 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Greeting Card B</title>
-  <link rel="stylesheet" href="greetingtest.css">
+  <title>Greeting Card</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <section class="welcome">
+    <div class="welcome-text">
+      <h1>Happy Chinese New Year</h1>
+      <h2>新年快乐</h2>
+    </div>
   </section>
   <section class="greetings">
     <div id="slides">
-        <div id="slide1" class="slide"></div>
-        <div id="slide2" class="slide"></div>
-        <div id="slide3" class="slide"></div>
-        <div id="slide4" class="slide"></div>
-        <div id="slide5" class="slide"></div>
+      <div id="slide1" class="slide">
+        <div class="arrows">
+          <a class="previous-slide" href="#slide5"></a>
+          <a class="next-slide" href="#slide2"></a>
         </div>
+      </div>
+      <div id="slide2" class="slide">
+        <div class="arrows">
+          <a class="previous-slide" href="#slide1"></a>
+          <a class="next-slide" href="#slide3"></a>
+        </div>
+      </div>
+      <div id="slide3" class="slide">
+        <div class="arrows">
+          <a class="previous-slide" href="#slide2"></a>
+          <a class="next-slide" href="#slide4"></a>
+        </div>
+      </div>
+      <div id="slide4" class="slide">
+        <div class="arrows">
+          <a class="previous-slide" href="#slide3"></a>
+          <a class="next-slide" href="#slide5"></a>
+        </div>
+      </div>
+      <div id="slide5" class="slide">
+        <div class="arrows">
+          <a class="previous-slide" href="#slide4"></a>
+          <a class="next-slide" href="#slide1"></a>
+        </div>
+      </div>
+    </div>
     <div id="nav-dots">
-      <div id="nav-dot1" class="nav-dot"><a class="dot" href="#slide1"></a></div>
-      <div id="nav-dot2" class="nav-dot"><a class="dot" href="#slide2"></a></div>
-      <div id="nav-dot3" class="nav-dot"><a class="dot" href="#slide3"></a></div>
-      <div id="nav-dot4" class="nav-dot"><a class="dot" href="#slide4"></a></div>
-      <div id="nav-dot5" class="nav-dot"><a class="dot" href="#slide5"></a></div>
+      <a class="dot" href="#slide1"></a>
+      <a class="dot" href="#slide2"></a>
+      <a class="dot" href="#slide3"></a>
+      <a class="dot" href="#slide4"></a>
+      <a class="dot" href="#slide5"></a>
     </div>
   </section>
-  <div class="activities">
+  <section class="activities">
     <div id="activity1"></div>
     <div id="activity2"></div>
     <div id="activity3"></div>
-  </div>
-  <div class="ending"></div>
+  </section>
+  <section class="ending">
+    <div class="ending-text">
+      <h1>Ending</h1>
+    </div>
+  </section>
 </body>
 
 </html>
