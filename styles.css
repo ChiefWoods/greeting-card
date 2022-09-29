@@ -207,20 +207,28 @@ section {
   text-decoration: none;
   color: black;
   margin-top: auto;
-  margin-bottom: 15px;
+  margin-bottom: 12.5px;
 }
 
 .activity>a>button {
   width: 125px;
   height: 30px;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: bold;
+  color: rgb(36, 152, 30);
   border-radius: 5px;
   border-color: rgba(204, 254, 152, 1);
   background-image: radial-gradient(circle farthest-corner at 50.7% 54%, rgba(204, 254, 152, 1) 0%, rgba(229, 253, 190, 1) 92.4%);
 }
 
 .activity>a>button:hover {
-  border-color: rgb(186, 249, 118);
   background-image: radial-gradient(circle farthest-corner at 50.7% 54%, rgb(186, 249, 118) 0%, rgb(216, 252, 159) 92.4%);
+  cursor: pointer;
+}
+
+.activity>a>button:active {
+  color: rgb(35, 144, 30);
+  background-image: radial-gradient(circle farthest-corner at 50.7% 54%, rgb(169, 255, 77) 0%, rgb(201, 250, 121)92.4%);
 }
 
 .ending {
