@@ -13,17 +13,15 @@ section {
   scroll-snap-align: start;
 }
 
-
 *::-webkit-scrollbar {
   width: 0;
 }
-
 
 .welcome {
   width: 100vw;
   height: 100vh;
   margin-bottom: 100px;
-  background: url("images/welcome.jpg");
+  background: url("images/welcome/welcome.jpg");
   background-size: cover;
   display: flex;
   align-items: flex-end;
@@ -39,19 +37,19 @@ section {
   margin-bottom: 12%;
 }
 
-.welcome-text > h3 {
+.welcome-text>h3 {
   font-size: 20px;
   font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
-.welcome-text > h1 {
+.welcome-text>h1 {
   font-size: 49px;
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.welcome-text > h2 {
+.welcome-text>h2 {
   font-size: 75px;
   letter-spacing: 9px;
   margin: 15px 0 0;
@@ -85,6 +83,7 @@ section {
   border: solid white;
   border-width: 0 5px 5px 0;
   padding: 13px;
+  transition: all 0.65s ease;
 }
 
 .previous-slide {
@@ -99,8 +98,7 @@ section {
 
 .previous-slide:hover,
 .next-slide:hover {
-  padding: 17.5px;
-  transition: all 0.5s ease;
+  scale: 1.25;
 }
 
 .greeting-box {
@@ -158,11 +156,78 @@ section {
   transition: all 0.25s ease;
 }
 
+.activities {
+  width: 100vw;
+  height: 100vh;
+  margin: 100px 0;
+  background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity {
+  width: 20%;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f063;
+  border-radius: 10px;
+  transition: all 0.4s ease-out;
+}
+
+.activity:hover {
+  transform: scale(1.05);
+}
+
+.activity>img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.activity>p {
+  text-align: justify;
+  margin-top: 30px;
+  padding: 0 20px;
+  font-size: 17.5px;
+  font-family: Baskerville, serif;
+  color: black;
+}
+
+.activity>a {
+  text-decoration: none;
+  color: black;
+  margin-top: auto;
+  margin-bottom: 15px;
+}
+
+.activity>a>button {
+  width: 125px;
+  height: 30px;
+  border-radius: 5px;
+  border-color: rgba(204, 254, 152, 1);
+  background-image: radial-gradient(circle farthest-corner at 50.7% 54%, rgba(204, 254, 152, 1) 0%, rgba(229, 253, 190, 1) 92.4%);
+}
+
+.activity>a>button:hover {
+  border-color: rgb(186, 249, 118);
+  background-image: radial-gradient(circle farthest-corner at 50.7% 54%, rgb(186, 249, 118) 0%, rgb(216, 252, 159) 92.4%);
+}
+
 .ending {
   width: 100vw;
   height: 100vh;
   margin-top: 100px;
-  background: url("images/ending gold.jpg");
+  background: url("images/ending/ending.jpg");
   background-size: cover;
   display: flex;
 }
@@ -182,23 +247,24 @@ section {
   margin-right: 75px;
 }
 
-.ending-text-container1 > h1 {
+.ending-text-container1>h1 {
   font-size: 130px;
   margin: -15px 0 0;
 }
 
 .tiger-link {
+  display: inline-block;
   text-decoration: none;
   color: black;
+  transition: transform 0.75s ease, color 1.25s ease;
 }
 
 .tiger-link:hover {
-  font-size: 145px;
+  transform: scale(1.2);
   color: #f35151;
-  transition: font-size 0.75s ease, color 1.25s ease;
 }
 
-.ending-text-container1 > h2 {
+.ending-text-container1>h2 {
   font-size: 50px;
   margin: 15px 0 0;
 }
@@ -208,34 +274,35 @@ section {
   margin-right: 75px;
 }
 
-.ending-text-container2 > p {
+.ending-text-container2>p {
   margin: 20px 40px 0px;
   width: 25%;
   font-size: 18px;
   font-family: serif;
+  text-align: justify;
 }
 
 #slide1 {
-  background: url("images/top down/top down 3.jpg");
+  background: url("images/greetings/top down 3.jpg");
   background-size: cover;
 }
 
 #slide2 {
-  background: url("images/top down/top down 4.jpg");
+  background: url("images/greetings/top down 4.jpg");
   background-size: cover;
 }
 
 #slide3 {
-  background: url("images/top down/top down 10.jpg");
+  background: url("images/greetings/top down 10.jpg");
   background-size: cover;
 }
 
 #slide4 {
-  background: url("images/top down/top down 8.jpg");
+  background: url("images/greetings/top down 8.jpg");
   background-size: cover;
 }
 
 #slide5 {
-  background: url("images/top down/top down 6.jpg");
+  background: url("images/greetings/top down 6.jpg");
   background-size: cover;
 }
