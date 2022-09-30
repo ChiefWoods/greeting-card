@@ -231,6 +231,85 @@ section {
   background-image: radial-gradient(circle farthest-corner at 50.7% 54%, rgb(169, 255, 77) 0%, rgb(201, 250, 121)92.4%);
 }
 
+/*Yan */
+.storysection{
+  background-color:#A80F0F;
+  background-image: url("");
+  width: 100vw;
+  height: 100vh;
+  margin: 100px 0;
+}
+
+.storycontainer{
+  display: flex;
+  justify-content: space-between;
+  /*
+  justify-content: space-around;
+  */
+}
+
+.storywindow{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  background-color: #FFE681;
+  padding: 70px 20px 80px 20px;
+  /*
+  padding:150px 100px 150px 100px;
+  */
+  margin: 60px 20px 100px 40px;
+  border-radius: 50px;
+  transition: all 0.4s ease-out;
+}
+
+.storywindow:hover{
+  transform: scale(1.05);
+}
+
+.storywindow>img{
+  width: 250px;
+  height:auto;
+  align-items: center;
+}
+
+.storywindow>a{
+  font-style: italic;
+  font-display: red;
+}
+
+.storywindow>p{
+  color:black;
+  font-size: 30px;
+  writing-mode: horizontal-tb;
+  text-shadow: 2px 2px 3px white;
+  text-align: center;
+  font-family:cursive;
+  font-size: 28px;
+}
+
+.storywindow>a>button{
+  background-color:white;
+  border-radius: 10px;
+  border-color:black;
+  size: 40px;
+}
+
+.storywindow>a>button:hover{
+  color:brown
+}
+
+.storywindow>a>button:active{
+  background-color: #A80F0F;
+  color:black
+}
+
+
+a{
+  font-size: large;
+  text-align: justify;
+}
+
+/*Yan*/
 .ending {
   width: 100vw;
   height: 100vh;
