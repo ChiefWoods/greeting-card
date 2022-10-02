@@ -2,10 +2,12 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  font-size: 1vw;
 }
 
 body {
   margin: 0;
+  overflow-x: hidden;
   overflow-y: scroll;
 }
 
@@ -13,19 +15,16 @@ section {
   scroll-snap-align: start;
 }
 
-*::-webkit-scrollbar {
+/* *::-webkit-scrollbar {
   width: 0;
-}
+} */
 
-.welcome {
+#welcome {
   width: 100vw;
   height: 100vh;
   margin-bottom: 100px;
   background: url("images/welcome/welcome.jpg");
   background-size: cover;
-  display: flex;
-  align-items: flex-end;
-  justify-content: start;
 }
 
 .welcome-text {
@@ -33,8 +32,9 @@ section {
   flex-direction: column;
   text-align: center;
   color: white;
-  margin-left: 9%;
-  margin-bottom: 12%;
+  position: absolute;
+  left: 7%;
+  bottom: 12%;
 }
 
 .welcome-text>h3 {
@@ -43,21 +43,19 @@ section {
 }
 
 .welcome-text>h1 {
-  font-size: 49px;
+  font-size: 45px;
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .welcome-text>h2 {
-  font-size: 75px;
+  font-size: 70px;
   letter-spacing: 9px;
   margin: 15px 0 0;
 }
 
-.greetings {
-  width: 100vw;
-  height: 100vh;
+#greetings {
   margin: 100px 0;
 }
 
@@ -112,8 +110,8 @@ section {
   writing-mode: vertical-lr;
   text-orientation: upright;
   text-align: center;
-  letter-spacing: 20px;
-  font-size: 65px;
+  letter-spacing: min(1rem, 20px);
+  font-size: 60px;
   margin: 0px 5px;
 }
 
@@ -124,6 +122,7 @@ section {
   margin: 0px 10px 20px;
   padding-top: 0px;
   font-family: 'Optima', sans-serif;
+  font-size: 17px;
 }
 
 .translation {
@@ -156,9 +155,10 @@ section {
   transition: all 0.25s ease;
 }
 
-.activities {
+#activities {
   width: 100vw;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   margin: 100px 0;
   background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
   display: flex;
@@ -170,18 +170,21 @@ section {
   width: 80%;
   height: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-block: 30px;
 }
 
 .activity {
-  width: 20%;
-  padding-bottom: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #f5f063;
   border-radius: 10px;
   transition: all 0.4s ease-out;
+  flex-basis: 275px;
+  margin-inline: 25px;
+  margin-block: 25px;
 }
 
 .activity:hover {
@@ -196,18 +199,16 @@ section {
 
 .activity>p {
   text-align: justify;
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 0 20px;
-  font-size: 17.5px;
-  font-family: Baskerville, serif;
+  font-size: 15px;
+  font-family: cursive;
   color: black;
 }
 
 .activity>a {
   text-decoration: none;
-  color: black;
-  margin-top: auto;
-  margin-bottom: 12.5px;
+  margin-block: auto 22.5px;
 }
 
 .activity>a>button {
@@ -232,115 +233,117 @@ section {
 }
 
 /*Yan */
-.storysection{
-  background-color:#A80F0F;
-  background-image: url("");
+
+#stories {
+  background-color: #A80F0F;
   width: 100vw;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   margin: 100px 0;
-}
-
-.storycontainer{
   display: flex;
-  justify-content: space-between;
-  /*
-  justify-content: space-around;
-  */
+  justify-content: center;
+  align-items: center;
 }
 
-.storywindow{
-  display:flex;
-  flex-direction:column;
+.story-container {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.story {
+  flex-basis: 350px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  margin: 25px;
   background-color: #FFE681;
-  padding: 70px 20px 80px 20px;
-  /*
-  padding:150px 100px 150px 100px;
-  */
-  margin: 60px 20px 100px 40px;
   border-radius: 50px;
   transition: all 0.4s ease-out;
 }
 
-.storywindow:hover{
+.story:hover {
   transform: scale(1.05);
 }
 
-.storywindow>img{
-  width: 250px;
-  height:auto;
-  align-items: center;
+.story-image {
+  width: 75%;
 }
 
-.storywindow>a{
-  font-style: italic;
-  font-display: red;
+#story-image2 {
+  position: relative;
+  top: 17.5px;
 }
 
-.storywindow>p{
-  color:black;
-  font-size: 30px;
-  writing-mode: horizontal-tb;
+.story>p {
+  font-size: 35px;
   text-shadow: 2px 2px 3px white;
   text-align: center;
-  font-family:cursive;
+  font-family: cursive;
   font-size: 28px;
+  margin: 0px 20px;
+  position: relative;
+  bottom: 32.5px;
 }
 
-.storywindow>a>button{
-  background-color:white;
+.story>a {
+  margin-block: auto 40px;
+}
+
+.story>a>button {
+  background-color: white;
   border-radius: 10px;
-  border-color:black;
-  size: 40px;
+  border-color: rgb(179, 178, 178);
+  font-size: 15px;
+  font-weight: bold;
+  width: 140px;
+  height: 40px;
 }
 
-.storywindow>a>button:hover{
-  color:brown
+.story>a>button:hover {
+  color: rgb(175, 80, 80);
+  cursor: pointer;
 }
 
-.storywindow>a>button:active{
-  background-color: #A80F0F;
-  color:black
-}
-
-
-a{
-  font-size: large;
-  text-align: justify;
+.story>a>button:active {
+  background-color: #d57b7b;
+  color: black
 }
 
 /*Yan*/
-.ending {
+
+#ending {
   width: 100vw;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   margin-top: 100px;
   background: url("images/ending/ending.jpg");
   background-size: cover;
   display: flex;
+  justify-content: center;
 }
 
 .ending-text {
   display: flex;
-  justify-content: space-between;
-  margin-top: 5%;
-  margin-left: 9%;
-  width: 87.5%;
+  width: 85%;
+  margin-top: 50px;
 }
 
-.ending-text-container1 {
+.ending-text-chinese {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 75px;
 }
 
-.ending-text-container1>h1 {
+.ending-text-chinese>h1 {
   font-size: 130px;
-  margin: -15px 0 0;
+  margin: 0px;
 }
 
 .tiger-link {
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color: black;
   transition: transform 0.75s ease, color 1.25s ease;
@@ -351,22 +354,31 @@ a{
   color: #f35151;
 }
 
-.ending-text-container1>h2 {
-  font-size: 50px;
-  margin: 15px 0 0;
+.ending-text-chinese>h2 {
+  font-size: 45px;
+  margin: 15px 0px 0px;
 }
 
-.ending-text-container2 {
+.ending-text-container {
   display: flex;
-  margin-right: 75px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-inline: 20px;
+  margin-top: 20px;
+  overflow: hidden;
 }
 
-.ending-text-container2>p {
-  margin: 20px 40px 0px;
-  width: 25%;
-  font-size: 18px;
-  font-family: serif;
-  text-align: justify;
+.ending-text-container>p {
+  font-size: 16.5px;
+  font-family: cursive;
+  line-height: 30px;
+  margin: 20px;
+  flex-wrap: wrap;
+  flex-basis: 325px;
+}
+
+.ending-text-container>p>span {
+  font-weight: bold;
 }
 
 #slide1 {
