@@ -15,9 +15,41 @@ section {
   scroll-snap-align: start;
 }
 
-/* *::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 0;
-} */
+}
+
+#side-nav {
+  width: 100vw;
+  height: 8vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255,255,255,0.5) 0%, rgba(205,205,205,0.75) 50%, rgba(255,255,255,0.5) 100%);
+  z-index: 2;
+}
+
+#side-nav > a {
+  text-decoration: none;
+}
+
+#side-nav > a > span {
+  padding: 10px 0px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: serif  ;
+  color: rgb(47, 47, 47);
+  display: block;
+  transition: all 0.4s ease-out;
+}
+
+#side-nav > a > span:hover {
+  color: rgb(239, 64, 64);
+  transform: scale(1.05);
+}
 
 #welcome {
   width: 100vw;
@@ -65,6 +97,10 @@ section {
   overflow-x: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
+}
+
+#slides::-webkit-scrollbar {
+  width: 0px;
 }
 
 .slide {
