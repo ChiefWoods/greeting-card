@@ -235,7 +235,7 @@ footer {
 
 .activity>p {
   text-align: justify;
-  margin-top: 20px;
+  margin-top: 12.5px;
   padding: 0 20px;
   font-size: 15px;
   font-family: cursive;
@@ -302,7 +302,7 @@ footer {
 }
 
 .story-image {
-  width: 75%;
+  width: 65%;
 }
 
 #story-image2 {
@@ -489,12 +489,14 @@ footer {
 
 #made-by {
   color: whitesmoke;
+  font-size: 15px;
 }
 
 #github {
   margin-inline: 75px;
   font-weight: bolder;
   font-family: cursive;
+  font-size: 15px;
 }
 
 footer>span>a {
