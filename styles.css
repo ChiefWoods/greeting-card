@@ -344,8 +344,6 @@ section, footer {
   color: black
 }
 
-/*popup*/
-
 .overlay {
   position: fixed;
   top: 0;
@@ -372,7 +370,6 @@ section, footer {
   width: 60%;
   max-height: 60vh;
   position: relative;
-  /* transition: all 3s ease-in-out; */
   overflow-y: scroll;
 }
 
@@ -409,8 +406,6 @@ section, footer {
     width: 70%;
   }
 }
-
-/*popup*/
 
 #ending {
   width: 100vw;
