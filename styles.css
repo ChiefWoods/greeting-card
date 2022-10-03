@@ -354,7 +354,6 @@ section, footer {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
-  display: flex;
 }
 
 .overlay:target {
@@ -363,14 +362,13 @@ section, footer {
 }
 
 .popup {
-  margin: auto;
+  margin: 150px auto;
   padding: 40px;
   background: #fff;
   border-radius: 20px;
-  width: 60%;
-  max-height: 60vh;
+  width: 40%;
   position: relative;
-  overflow-y: scroll;
+  transition: all 3s ease-in-out;
 }
 
 .popup .close {
@@ -384,18 +382,13 @@ section, footer {
   color: #333;
 }
 
-.close:hover {
+.popup .close:hover {
   color:#A80F0F;
 }
 
-.content {
-  padding-inline: 15px;
-  overflow-y: scroll;
-}
-
-.overlay>.popup>.content>p{
-  text-align: justify;
-  font-size: large;
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
 }
 
 @media screen and (max-width: 700px){
@@ -406,6 +399,12 @@ section, footer {
     width: 70%;
   }
 }
+
+.overlay>.popup>.content>p{
+  text-align: justify;
+  font-size: large;
+}
+
 
 #ending {
   width: 100vw;
