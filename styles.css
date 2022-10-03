@@ -11,7 +11,7 @@ body {
   overflow-y: scroll;
 }
 
-section {
+section, footer {
   scroll-snap-align: start;
 }
 
@@ -54,7 +54,6 @@ section {
 #welcome {
   width: 100vw;
   height: 100vh;
-  margin-bottom: 100px;
   background: url("images/welcome/welcome.jpg");
   background-size: cover;
 }
@@ -88,7 +87,8 @@ section {
 }
 
 #greetings {
-  margin: 100px 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 #slides {
@@ -195,7 +195,6 @@ section {
   width: 100vw;
   height: auto;
   min-height: 100vh;
-  margin: 100px 0;
   background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
   display: flex;
   justify-content: center;
@@ -273,7 +272,6 @@ section {
   width: 100vw;
   height: auto;
   min-height: 100vh;
-  margin: 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -346,7 +344,6 @@ section {
   color: black
 }
 
-/*popup*/
 .overlay {
   position: fixed;
   top: 0;
@@ -357,20 +354,23 @@ section {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  display: flex;
 }
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
 }
 
 .popup {
-  margin: 150px auto;
+  margin: auto;
   padding: 40px;
   background: #fff;
   border-radius: 20px;
   width: 60%;
+  max-height: 60vh;
   position: relative;
-  transition: all 3s ease-in-out;
+  overflow-y: scroll;
 }
 
 .popup .close {
@@ -383,12 +383,19 @@ section {
   text-decoration: none;
   color: #333;
 }
-.popup .close:hover {
+
+.close:hover {
   color:#A80F0F;
 }
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
+
+.content {
+  padding-inline: 15px;
+  overflow-y: scroll;
+}
+
+.overlay>.popup>.content>p{
+  text-align: justify;
+  font-size: large;
 }
 
 @media screen and (max-width: 700px){
@@ -400,18 +407,10 @@ section {
   }
 }
 
-.overlay>.popup>.content>p{
-  text-align: justify;
-  font-size: large;
-}
-/*popup*/
-
-
 #ending {
   width: 100vw;
   height: auto;
   min-height: 100vh;
-  margin-top: 100px;
   background: url("images/ending/ending.jpg");
   background-size: cover;
   display: flex;
@@ -472,6 +471,29 @@ section {
 
 .ending-text-container>p>span {
   font-weight: bold;
+}
+
+footer {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:dimgray;
+}
+
+#made-by {
+  color: whitesmoke;
+}
+
+#github {
+  margin-inline: 75px;
+  font-weight: bolder;
+  font-family: cursive;
+}
+
+footer > span > a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 #slide1 {
