@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <title>Greeting Card</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -124,18 +123,85 @@
         <div class="story">
           <img src="images/stories/zodiac.svg" class="story-image" alt="zodiac circle in a cartoonish style">
           <p>How are Chinese Zodiac sequences decided?</p>
-          <a href="Zodiac sequence.html"><button>READ MORE</button></a>
+          <a href="#popup1"><button>READ MORE</button></a>
           </a>
         </div>
         <div class="story">
           <img src="images/stories/ang pao.svg" class="story-image" alt="two ang paos" id="story-image2">
           <p>Why do we insert money into ang paos?</p>
-          <a href="red envelop.html"><button>READ MORE</button></a>
+          <a href="#popup2"><button>READ MORE</button></a>
         </div>
         <div class="story">
           <img src="images/stories/dumplings.svg" class="story-image" alt="three dumplings lined up together">
           <p>Why do we eat dumplings during Chinese New Year?</p>
-          <a href="dumplings.html"><button>READ MORE</button></a>
+          <a href="#popup3"><button>READ MORE</button></a>
+        </div>
+      </div>
+
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <a class="close" href="#stories">&times;</a>
+          <div class="content">
+            <p>The Jade Emperor, a well-known figure in Chinese mythology, is the ruler of heaven and known as the
+              first emperor of China. He organised a race on his birthday and invited twelve animals to take part in
+              it. As the prize, a year in the zodiac will be named after each one and the race would determine the
+              order of each animal.</p>
+            <p>
+              The large river was the final obstacle of the race, and when the ox and the rat were about to cross, the
+              rat persuaded the ox to let it sit on the head of ox to cross the water. As the two neared the finish
+              line, however, the rat dashed to the finish line, becoming the first animal in the zodiac and the ox
+              became second.</p>
+            <p>
+              Then followed the tiger, which was slowed down by the river. For fourth place, the rabbit hung on a
+              floating log to avoid being swept away by harsh waves and was brought ashore thanks to the dragon
+              breath. The dragon, who stepped away from the race to extinguish a fire at a nearby village therefore
+              won number five . The horse was slightly behind from the dragon and was about to be placed number six
+              when the snake slithered off from its leg, causing him to lose his balance—and the sixth place. The
+              snake took sixth place and the horse was placed seventh.</p>
+            <p>
+              The goat, monkey and rooster teamed up together to make a raft to cross the river. The goat ran to the
+              finish line, followed by the monkey and the rooster. The dog, the eleventh animal in the zodiac
+              calendar, got distracted by the water and decided to play in it and lost track of time.
+              The story could have ended here, as the emperor almost gave up on waiting for the pig. The pig had
+              gotten hungry during the middle of the race and stopped for a bite to eat. Which of course, was followed
+              by a nap. After it finally woke up, the animal finished the race and was placed twelfth.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="popup2" class="overlay">
+        <div class="popup">
+          <a class="close" href="#stories">&times;</a>
+          <div class="content">
+            <p>It seems like there were an awful amount of demons and monsters in ancient China. If you love receiving
+              red packets during Chinese New Year, you will have Demon Sui to thank. In the myth, Demon Sui would
+              arrive on the night of New Year Eve to harm children. Children were so terrified of the demon that
+              instead of crying, they would come down with a fever so severe that it will lead to mental instability.
+              To protect the children from the demon, parents would light candles and pray to gods for protection. One
+              day, a family decided to give eight coins to the child to play with and keep him entertained. When the
+              child fell asleep, the parents placed the coins in a red paper underneath the pillow. The same night,
+              Sui visited the home of the child but when it tried to touch his head, the coins emitted a strong light
+              and scared the monster away.</p>
+            <p>
+              Turns out, the gods heard the prayers and sent eight guards disguised as the coins to protect the child.
+              From that moment onwards, the tradition of giving red envelopes to children to keep them safe and bring
+              good luck began.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="popup3" class="overlay">
+        <div class="popup">
+          <a class="close" href="#stories">&times;</a>
+          <div class="content">
+            <p>Nvwa is known as the mother goddess of Chinese mythology and is celebrated for creating humanity and
+              repairing the order of heaven and Earth. The goddess created a different creature on the first eight
+              days of Chinese New Year, and on the seventh day, humans were born. Nvwa was said to have created humans
+              out of yellow clay. However, after realising that the ears would not withstand the cold in the winter,
+              she sowed the ears in place and put the thread in the humans mouths. To thank Nvwa for the creation of
+              humans, people shaped dough into the shape of ears, and stuffed it with meat and vegetables. And that is
+              how dumplings were born.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -166,6 +232,10 @@
       </div>
     </section>
   </main>
+  <footer>
+    <span id="made-by">Made by Chii Yuen and Yen Ping</span>
+    <span id="github"><a href="https://github.com/ChiefWoods/greeting-card" target="_blank">GitHub</a></span>
+  </footer>
 </body>
 
 </html>
