@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Greeting Card</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav id="side-nav">
+    <a href="#welcome"><span>Welcome</span></a>
+    <a href="#greetings"><span>Greetings</span></a>
+    <a href="#activities"><span>Activities</span></a>
+    <a href="#stories"><span>Stories</span></a>
+    <a href="#ending"><span>Ending</span></a>
+  </nav>
+
+  <main>
+    <section id="welcome">
+      <div class="welcome-text">
+        <h3>Wishing You A Prosperous</h3>
+        <h1>Year of the Tiger</h1>
+        <h2>新年快乐</h2>
+      </div>
+    </section>
+
+    <section id="greetings">
+      <div id="slides">
+        <div id="slide1" class="slide">
+          <a class="previous-slide" href="#slide5"></a>
+          <div id="greeting-box1" class="greeting-box">
+            <h2 class="chinese">万事如意</h2>
+            <h3 class="pinyin">wàn shì rú yì</h3>
+            <p class="translation">May everything in life go as you wish</p>
+          </div>
+          <a class="next-slide" href="#slide2"></a>
+        </div>
+        <div id="slide2" class="slide">
+          <a class="previous-slide" href="#slide1"></a>
+          <div id="greeting-box1" class="greeting-box">
+            <h2 class="chinese">龙马精神</h2>
+            <h3 class="pinyin">lóng mǎ jīng shén</h3>
+            <p class="translation">May you enjoy the vitality of a horse or dragon</p>
+          </div>
+          <a class="next-slide" href="#slide3"></a>
+        </div>
+        <div id="slide3" class="slide">
+          <a class="previous-slide" href="#slide2"></a>
+          <div id="greeting-box3" class="greeting-box">
+            <h2 class="chinese">学业进步</h2>
+            <h3 class="pinyin">xué yè jìn bù</h3>
+            <p class="translation">May your academics and studies progress well</p>
+          </div>
+          <a class="next-slide" href="#slide4"></a>
+        </div>
+        <div id="slide4" class="slide">
+          <a class="previous-slide" href="#slide3"></a>
+          <div id="greeting-box4" class="greeting-box">
+            <h2 class="chinese">生意行隆</h2>
+            <h3 class="pinyin">shēng yì xīng lóng</h3>
+            <p class="translation">May your businesses and ventures thrive prosperously</p>
+          </div>
+          <a class="next-slide" href="#slide5"></a>
+        </div>
+        <div id="slide5" class="slide">
+          <a class="previous-slide" href="#slide4"></a>
+          <div id="greeting-box5" class="greeting-box">
+            <h2 class="chinese">年年有余</h2>
+            <h3 class="pinyin">nián nián yǒu yú</h3>
+            <p class="translation">May you experience an abundance of wealth yearly</p>
+          </div>
+          <a class="next-slide" href="#slide1"></a>
+        </div>
+      </div>
+
+      <div id="nav-dots">
+        <a class="dot" href="#slide1"></a>
+        <a class="dot" href="#slide2"></a>
+        <a class="dot" href="#slide3"></a>
+        <a class="dot" href="#slide4"></a>
+        <a class="dot" href="#slide5"></a>
+      </div>
+    </section>
+
+    <section id="activities">
+      <div class="activity-container">
+        <div class="activity">
+          <img src="images/activities/ang pao.jpg" class="activity-image"
+            alt="ang pao being seen given from one hand to another">
+          <p>Ang Paos, also known as red envelopes, are monetary gifts given at family reunions and special occasions
+            such
+            as weddings. Typically, it is given out by elders and married couples to children as well as the unmarried.
+            These envelopes symbolizes the act of warding off old age.</p>
+          <a href="https://www.comparehero.my/money-tips/articles/chinese-new-year-ang-pow-what-does-it-mean"
+            target="_blank"><button>LEARN MORE</button></a>
+        </div>
+        <div class="activity">
+          <img src="images/activities/firecrackers.jpg" class="activity-image"
+            alt="firecrackers coloured gold seen hung up">
+          <p>Firecrackers are commonly set off with the belief that it chases away monsters and evil spirits that do
+            harm.
+            The loud noises accompanied by it is perceived to bring good fortune and awaken deities that are associated
+            to
+            longevity and prosperity.</p>
+          <a href="https://www.chinahighlights.com/travelguide/festivals/chinese-new-year-firecrackers.htm"
+            target="_blank"><button>LEARN MORE</button></a>
+        </div>
+        <div class="activity">
+          <img src="images/activities/lion dance.jpg" class="activity-image"
+            alt="lion dance being performed with two lion heads">
+          <p>Lion dances are traditional performances presented by a team of trained costumed dancers along to the tune
+            of
+            gongs and drums. These performances can vary with difficulty upon the client's requests. In Chinese culture,
+            lions are seen as a symbol against misfortune.</p>
+          <a href="http://gundkwok.org/what-is-lion-dance/" target="_blank"><button>LEARN MORE</button></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="stories">
+      <div class="story-container">
+        <div class="story">
+          <img src="images/stories/zodiac.svg" class="story-image" alt="zodiac circle in a cartoonish style">
+          <p>How are Chinese Zodiac sequences decided?</p>
+          <a href="#popup1"><button>READ MORE</button></a>
+          </a>
+        </div>
+        <div class="story">
+          <img src="images/stories/ang pao.svg" class="story-image" alt="two ang paos" id="story-image2">
+          <p>Why do we insert money into ang paos?</p>
+          <a href="#popup2"><button>READ MORE</button></a>
+        </div>
+        <div class="story">
+          <img src="images/stories/dumplings.svg" class="story-image" alt="three dumplings lined up together">
+          <p>Why do we eat dumplings during Chinese New Year?</p>
+          <a href="#popup3"><button>READ MORE</button></a>
+        </div>
+      </div>
+
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <a class="close" href="#stories">&times;</a>
+          <div class="content">
+            <p>The Jade Emperor, a well-known figure in Chinese mythology, is the ruler of heaven and known as the
+              first emperor of China. He organised a race on his birthday and invited twelve animals to take part in
+              it. As the prize, a year in the zodiac will be named after each one and the race would determine the
+              order of each animal.</p>
+            <p>
+              The large river was the final obstacle of the race, and when the ox and the rat were about to cross, the
+              rat persuaded the ox to let it sit on the head of ox to cross the water. As the two neared the finish
+              line, however, the rat dashed to the finish line, becoming the first animal in the zodiac and the ox
+              became second.</p>
+            <p>
+              Then followed the tiger, which was slowed down by the river. For fourth place, the rabbit hung on a
+              floating log to avoid being swept away by harsh waves and was brought ashore thanks to the dragon
+              breath. The dragon, who stepped away from the race to extinguish a fire at a nearby village therefore
+              won number five . The horse was slightly behind from the dragon and was about to be placed number six
+              when the snake slithered off from its leg, causing him to lose his balance—and the sixth place. The
+              snake took sixth place and the horse was placed seventh.</p>
+            <p>
+              The goat, monkey and rooster teamed up together to make a raft to cross the river. The goat ran to the
+              finish line, followed by the monkey and the rooster. The dog, the eleventh animal in the zodiac
+              calendar, got distracted by the water and decided to play in it and lost track of time.
+              The story could have ended here, as the emperor almost gave up on waiting for the pig. The pig had
+              gotten hungry during the middle of the race and stopped for a bite to eat. Which of course, was followed
+              by a nap. After it finally woke up, the animal finished the race and was placed twelfth.</p>
+          </div>
+        </div>
+      </div>
+      <div id="popup2" class="overlay">
+        <div class="popup">
+          <a class="close" href="#stories">&times;</a>
+          <div class="content">
+            <p>It seems like there were an awful amount of demons and monsters in ancient China. If you love receiving
+              red packets during Chinese New Year, you will have Demon Sui to thank. In the myth, Demon Sui would
+              arrive on the night of New Year Eve to harm children. Children were so terrified of the demon that
+              instead of crying, they would come down with a fever so severe that it will lead to mental instability.
+              To protect the children from the demon, parents would light candles and pray to gods for protection. One
+              day, a family decided to give eight coins to the child to play with and keep him entertained. When the
+              child fell asleep, the parents placed the coins in a red paper underneath the pillow. The same night,
+              Sui visited the home of the child but when it tried to touch his head, the coins emitted a strong light
+              and scared the monster away.</p>
+            <p>
+              Turns out, the gods heard the prayers and sent eight guards disguised as the coins to protect the child.
+              From that moment onwards, the tradition of giving red envelopes to children to keep them safe and bring
+              good luck began.</p>
+          </div>
+        </div>
+      </div>
+      <div id="popup3" class="overlay">
+        <div class="popup">
+          <a class="close" href="#stories">&times;</a>
+          <div class="content">
+            <p>Nvwa is known as the mother goddess of Chinese mythology and is celebrated for creating humanity and
+              repairing the order of heaven and Earth. The goddess created a different creature on the first eight
+              days of Chinese New Year, and on the seventh day, humans were born. Nvwa was said to have created humans
+              out of yellow clay. However, after realising that the ears would not withstand the cold in the winter,
+              she sowed the ears in place and put the thread in the humans mouths. To thank Nvwa for the creation of
+              humans, people shaped dough into the shape of ears, and stuffed it with meat and vegetables. And that is
+              how dumplings were born.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ending">
+      <div class="ending-text">
+        <div class="ending-text-chinese">
+          <h1><a class="tiger-link" href="https://en.wikipedia.org/wiki/Tiger_(zodiac)" target="_blank">虎</a></h1>
+          <h2>hǔ</h2>
+        </div>
+        <div class="ending-text-container">
+          <p>2022 is the Year of the Tiger according to Chinese zodiac, which begins from the Feb 1 of 2022, lasting all
+            the
+            way to Jan 21 of 2023. The Tiger ranks third in the 12-year cycle of the Chinese zodiac signs. The Years of
+            the
+            Tiger include 1914, 1926, 1938, 1950, 1962, 1974, 1986, 1998, 2010, 2022, 2034 and so on.</p>
+          <p>Tigers, considered to be brave, cruel, forceful, and terrifying, are the symbol of power and lordliness in
+            Chinese culture. In ancient times, people usually compared emperors or kings with the tigers. Tigers are
+            also
+            considered as a patron deity for children and parents will prepare the shoes and hats with tiger designs for
+            their babies.</p>
+          <p>The Chinese zodiac Tiger sign entitles people born in the Years of the Tiger to be natural leaders. They
+            are
+            adventurous, ambitious and have a strong sense of justice, but maybe also a little arrogant and
+            impetuous.<br><br><span>To learn more about the zodiac tiger, click on the Chinese letter on the
+              left.</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span id="made-by">Made by Chii Yuen and Yen Ping</span>
+    <span id="github"><a href="https://github.com/ChiefWoods/greeting-card" target="_blank">GitHub</a></span>
+  </footer>
+</body>
+
+</html>
