@@ -485,12 +485,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: dimgray;
+  background-color: #0D1117;
 }
 
 #made-by {
-  color: whitesmoke;
+  color: white;
   font-size: 15px;
+  font-family: cursive;
 }
 
 #github {
@@ -502,7 +503,7 @@ footer {
 
 footer>span>a {
   text-decoration: none;
-  color: whitesmoke;
+  color: white;
 }
 
 #slide1 {
