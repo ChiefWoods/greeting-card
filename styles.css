@@ -427,7 +427,7 @@ footer {
 .ending-text {
   display: flex;
   width: 85%;
-  margin-top: 50px;
+  margin-block: 50px;
 }
 
 .ending-text-chinese {
