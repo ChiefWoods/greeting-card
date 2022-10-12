@@ -261,7 +261,8 @@ footer {
 }
 
 .activity>a>button:hover {
-  background-image: linear-gradient(120deg, #e6b925 0%, #fda085 100%);  cursor: pointer;
+  background-image: linear-gradient(120deg, #e6b925 0%, #fda085 100%);
+  cursor: pointer;
 }
 
 .activity>a>button:active {
@@ -484,7 +485,6 @@ footer {
   height: 8vh;
   display: flex;
   align-items: center;
-  justify-content: center;
   background-color: #0D1117;
 }
 
@@ -492,17 +492,15 @@ footer {
   color: white;
   font-size: 15px;
   font-family: cursive;
+  margin: 0 auto;
 }
 
 #github {
-  margin-inline: 75px;
-  font-weight: bolder;
-  font-family: cursive;
-  font-size: 15px;
+  margin-right: 17.5px;
 }
 
-footer>span>a {
-  text-decoration: none;
+.fa-github {
+  font-size: 27.5px;
   color: white;
 }
 
