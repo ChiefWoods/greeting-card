@@ -1,12 +1,13 @@
 :root {
-  box-sizing: border-box;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   font-size: 1vw;
 }
 
 body {
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -20,7 +21,7 @@ footer {
   width: 0;
 }
 
-#side-nav {
+.nav-top {
   width: 100vw;
   height: 8vh;
   position: fixed;
@@ -33,11 +34,11 @@ footer {
   z-index: 2;
 }
 
-#side-nav>a {
+.nav-top>a {
   text-decoration: none;
 }
 
-#side-nav>a>span {
+.nav-top>a>span {
   padding: 10px 0px;
   font-size: 20px;
   letter-spacing: 2px;
@@ -47,7 +48,7 @@ footer {
   transition: all 0.4s ease-out;
 }
 
-#side-nav>a>span:hover {
+.nav-top>a>span:hover {
   color: rgb(239, 64, 64);
   transform: scale(1.05);
 }
@@ -488,20 +489,20 @@ footer {
   background-color: #0D1117;
 }
 
-#made-by {
+.made-by {
   color: white;
   font-size: 15px;
   font-family: cursive;
   margin: 0 auto;
 }
 
-#github {
-  margin-right: 17.5px;
+.github-link {
+  position: relative;
+  right: 37.5px;
 }
 
-.fa-github {
-  font-size: 27.5px;
-  color: white;
+.github-icon {
+  height: 27.5px;
 }
 
 #slide1 {
