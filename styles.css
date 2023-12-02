@@ -1,7 +1,6 @@
 :root {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
-  font-size: 1vw;
 }
 
 body {
@@ -34,11 +33,11 @@ footer {
   z-index: 2;
 }
 
-.nav-top>a {
+.nav-top > a {
   text-decoration: none;
 }
 
-.nav-top>a>span {
+.nav-top > a > span {
   padding: 10px 0px;
   font-size: 20px;
   letter-spacing: 2px;
@@ -48,7 +47,7 @@ footer {
   transition: all 0.4s ease-out;
 }
 
-.nav-top>a>span:hover {
+.nav-top > a > span:hover {
   color: rgb(239, 64, 64);
   transform: scale(1.05);
 }
@@ -70,19 +69,19 @@ footer {
   bottom: 12%;
 }
 
-.welcome-text>h3 {
+.welcome-text > h3 {
   font-size: 20px;
   font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
-.welcome-text>h1 {
+.welcome-text > h1 {
   font-size: 45px;
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.welcome-text>h2 {
+.welcome-text > h2 {
   font-size: 70px;
   letter-spacing: 9px;
   margin: 15px 0 0;
@@ -230,13 +229,13 @@ footer {
   transform: scale(1.05);
 }
 
-.activity>img {
+.activity > img {
   width: 100%;
   height: auto;
   border-radius: 10px 10px 0 0;
 }
 
-.activity>p {
+.activity > p {
   text-align: justify;
   margin-top: 12.5px;
   padding: 0 20px;
@@ -245,12 +244,12 @@ footer {
   color: whitesmoke;
 }
 
-.activity>a {
+.activity > a {
   text-decoration: none;
   margin-block: auto 22.5px;
 }
 
-.activity>a>button {
+.activity > a > button {
   width: 125px;
   height: 30px;
   font-family: 'Gill Sans', sans-serif;
@@ -259,14 +258,15 @@ footer {
   border-radius: 5px;
   border-color: #f0c126;
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  margin-top: 30px; 
 }
 
-.activity>a>button:hover {
+.activity > a > button:hover {
   background-image: linear-gradient(120deg, #e6b925 0%, #fda085 100%);
   cursor: pointer;
 }
 
-.activity>a>button:active {
+.activity > a > button:active {
   color: #a30f0f;
   background-image: linear-gradient(120deg, #c49807 0%, #fda085 100%);
 }
@@ -313,7 +313,7 @@ footer {
   top: 17.5px;
 }
 
-.story>p {
+.story > p {
   font-size: 35px;
   text-shadow: 2px 2px 3px white;
   text-align: center;
@@ -324,11 +324,11 @@ footer {
   bottom: 32.5px;
 }
 
-.story>a {
+.story > a {
   margin-block: auto 40px;
 }
 
-.story>a>button {
+.story > a > button {
   background-color: white;
   border-radius: 10px;
   border-color: rgb(179, 178, 178);
@@ -338,12 +338,12 @@ footer {
   height: 40px;
 }
 
-.story>a>button:hover {
+.story > a > button:hover {
   color: rgb(175, 80, 80);
   cursor: pointer;
 }
 
-.story>a>button:active {
+.story > a > button:active {
   background-color: #d57b7b;
   color: black
 }
@@ -395,7 +395,7 @@ footer {
   overflow-y: scroll;
 }
 
-.overlay>.popup>.content>p {
+.overlay > .popup > .content > p {
   text-align: justify;
   font-size: large;
 }
@@ -410,7 +410,7 @@ footer {
   }
 }
 
-.overlay>.popup>.content>p{
+.overlay > .popup > .content > p {
   text-align: justify;
   font-size: large;
 }
@@ -438,7 +438,7 @@ footer {
   align-items: center;
 }
 
-.ending-text-chinese>h1 {
+.ending-text-chinese > h1 {
   font-size: 130px;
   margin: 0px;
 }
@@ -455,7 +455,7 @@ footer {
   color: #f35151;
 }
 
-.ending-text-chinese>h2 {
+.ending-text-chinese > h2 {
   font-size: 45px;
   margin: 15px 0px 0px;
 }
@@ -469,7 +469,7 @@ footer {
   overflow: hidden;
 }
 
-.ending-text-container>p {
+.ending-text-container > p {
   font-size: 16.5px;
   font-family: cursive;
   line-height: 30px;
@@ -478,31 +478,8 @@ footer {
   flex-basis: 325px;
 }
 
-.ending-text-container>p>span {
+.ending-text-container > p > span {
   font-weight: bold;
-}
-
-footer {
-  height: 8vh;
-  display: flex;
-  align-items: center;
-  background-color: #0D1117;
-}
-
-.made-by {
-  color: white;
-  font-size: 15px;
-  font-family: cursive;
-  margin: 0 auto;
-}
-
-.github-link {
-  position: relative;
-  right: 37.5px;
-}
-
-.github-icon {
-  height: 27.5px;
 }
 
 #slide1 {
