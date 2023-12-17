@@ -20,14 +20,14 @@ Built together with Yen Ping.
 
 ### Tools and Languages
 
-- [![HTML5](https://img.shields.io/badge/HTML5-grey?style=for-the-badge&logo=html5)](https://html5.org/)
+- [![HTML5](https://img.shields.io/badge/HTML5-white?style=for-the-badge&logo=html5)](https://html5.org/)
 - [![CSS3](https://img.shields.io/badge/CSS3-306AF1?style=for-the-badge&logo=css3)](https://www.w3.org/Style/CSS/Overview.en.html)
 
 ## Getting Started
 
 ### Setup
 
-Clone the repository.
+1. Clone the repository
 ```
 git clone https://github.com/ChiefWoods/greeting-card.git
 ```
